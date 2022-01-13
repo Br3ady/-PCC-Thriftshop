@@ -1,0 +1,257 @@
+/* Head */
+head
+{
+
+}
+
+::-webkit-scrollbar
+{
+  width: 3px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: #0000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+  background: #252d58;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+  background: #252d57;
+}
+
+
+
+/* Body */
+body
+{
+ margin: 0;
+ background: #fffef5;
+ display: flex;
+ flex-direction: row;
+ height: 100em;
+}
+
+
+
+/* Main Button  */
+section /* Left 1/2 */
+{
+  flex-grow: 1;
+  width: 100%;
+}
+
+nav /* Container For Main Button */
+{
+  height: 100%;
+  width: 100%;
+}
+
+#mainButton /* Pre-Click Main Button */
+{
+  margin: 10% 10% 0% 10%;
+  transition-duration: .2s;
+  text-align: left;
+  color: #252d57;
+  background: #0000;
+  border-radius: 35px;
+  border: 3px solid #252d57;
+  height: 13%;
+  width: 80%;
+}
+
+#mainButtonClick /* Post-Click Main Button */
+{
+  margin: 5% 5% 0% 5%;
+  padding: 0px;
+  transition-duration: .2s;
+  text-align: center;
+  color: #252d57;
+  background: #0000;
+  border-radius: 10px;
+  text-indent: 0px;
+  border: 3px solid #252d57;
+  height: 45%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#mainButton:hover /* During Hover Main Button Change */
+{
+  border: 8px solid #252d57;
+  background: #fffef5;
+  padding: 2px;
+}
+
+nav button ul /* All Text Within Pr-C Main Button*/
+{
+  list-style-type: none;
+}
+
+#mainButtonTitle /* Title for Menu (drink or food)? */
+{
+  font-family: monospace;
+  font-size: 50px;
+  padding: 0px 0px 50px 0px;
+  text-decoration: underline;
+}
+
+#mainButtonText /* Description Main Button Text */
+{
+  font-size: 15px;
+  font-family: monospace;
+  padding: 10px;
+}
+
+.menuItem /* Basic look of Menu Items */
+{
+  background: #0000;
+  padding:0px;
+  margin: 0;
+  width: 100%;
+  height: 20%;
+  max-height: 20%;
+  border-bottom: 2px solid #252d57;
+  display: flex;
+  flex-direction: row;
+  flex-grow:1;
+}
+
+.menuItemFinal /*fix to remove attribute from menuItem*/
+{
+  background: #0000;
+  padding:0px;
+  margin: 0;
+  width: 100%;
+  height: 20%;
+  max-height: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-grow:1;
+}
+
+.buttonButton /* internal menu buttons */ /*fix margins*/
+{
+  height: 90%;
+  width: 20%;
+  padding: 0px;
+  margin: 1%;
+  border-radius: 10px;
+  border: 3px solid #777777;
+  background: #0000 ;
+  flex-grow: 1;
+}
+
+.buttonButton:hover
+{
+  border: 4px solid #669966;
+}
+
+.buttonButtonClick
+{
+  height: 90%;
+  width: 20%;
+  padding: 0px;
+  margin: 1%;
+  border-radius: 10px;
+  border: 5px solid #669F66;
+  background: #889966 ;
+  flex-grow: 1;
+}
+
+
+/* Cart */
+div /* Right Side */
+{
+  border-left: 4px solid #252d57;
+  border-top: 3px solid #252d57;
+  background: #0000;
+  width: 100%;
+  height: 100%;
+  flex-grow: .5;
+  max-width: 15em;
+  display:flex;
+  flex-direction: column;
+}
+
+#orderSytem /* Cart Header */
+{
+  display:flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10%;
+  list-style-type: none;
+}
+
+div ul li /* Each Element in Right Side */
+{
+  list-style: none;
+}
+
+#cartTitle /* Cart Text li */
+{
+  margin-top: 0px;
+  padding: 0px;
+  margin-bottom: 25px;
+  font-size: 45px;
+  text-decoration: underline;
+  color: #252d57;
+}
+
+#cartTitleText /* Cart Text */
+{
+  margin: 0;
+  text-align: center;
+  font-family: "Copperplate", fantasy;
+}
+
+
+#orderButton /* Places The Order */
+{
+  background: #0000;
+  padding: 10px;
+  margin-left: 10%;
+  width: 80%;
+  height: inherit;
+  font-size: 15px;
+}
+
+#Cart /* All Items in Cart */
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20%;
+  height: 100%;
+  width: 100%;
+}
+
+#Cart li
+{
+  margin-bottom: 25px;
+  flex-basis: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.cartItem /* Each Item in the cart */
+{
+  background: #0000;
+  border-radius: 5px;
+  margin-left: 10%;
+  width: 80%;
+  height: 100%;
+}
